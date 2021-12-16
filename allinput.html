@@ -1,0 +1,68 @@
+<!-- 11.	Create an HTML page, which should contain all types of input elements. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <style type="text/css">
+       label{
+         width: 200px;
+         display:inline-block;
+       }
+       form{
+          font-family: 'Times New Roman', Times, serif;
+       }
+     
+    </style>
+
+  </head>
+<body>
+     <form >
+      
+    <label for="fn">Name:</label> 
+    <input type="text" id="fn" > <br>
+  
+    <label for="dob">Date of Birth :</label>
+    <input type="date"> <br>
+    <label for="gender">Gender :</label>
+    <input type="radio" id="person" name="status">Male
+    <input type="radio" name="status">Female <br>
+    <label for="qua">Qualification : </label> 
+    <input type="checkbox"> 10th
+    <input type="checkbox"> 12th
+    <input type="checkbox"> Graduation <br>
+    Degree : <select name="degree">
+          <option value="arts">Arts</option>
+          <option value="arts">Science</option>
+          <option value="arts">Engineering</option>
+          <option value="arts">Doctor</option>
+    </select> <br>
+    <label for="exp"> Year of Exprience :</label> <br>
+    <input type="range" min="1" max="10" id="get" step="0.5" onchange="foo()">
+    <input type="text"  id="put" > <br>
+    <label for="eml">Email:</label> 
+    <input type="text" id="eml" > <br>
+  
+    <label for="password">Password :</label>
+    <input type="password"> <br>
+    <input type="submit">
+    
+    
+</form>
+<script>
+  function foo(){
+    var get=document.getElementById("get").value;
+    document.getElementById("put").value=get;
+  }
+
+</script>
+
+</body>
+</html>
+
+
